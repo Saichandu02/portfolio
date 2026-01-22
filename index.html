@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Chandu Machavarapu - DevOps Engineer</title>
+    <link rel="icon" type="image/gif" href="/favicon.gif">
     <style>
         * {
             margin: 0;
@@ -763,7 +764,30 @@
         }
     </style>
 </head>
-<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+<script>
+(function () {
+  const storageKey = "titleScrolledOnce";
+  if (localStorage.getItem(storageKey)) return;
+
+  const originalTitle = document.title;
+  let title = originalTitle + "   •   ";
+  let index = 0;
+  const speed = 200; // milliseconds
+  const totalCycles = title.length; // scroll once
+
+  const interval = setInterval(() => {
+    document.title = title.slice(index) + title.slice(0, index);
+    index++;
+
+    if (index > totalCycles) {
+      clearInterval(interval);
+      document.title = originalTitle;
+      localStorage.setItem(storageKey, "true");
+    }
+  }, speed);
+})();
+</script>
+
 <body>
     <nav>
         <ul>
