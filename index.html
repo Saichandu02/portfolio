@@ -765,33 +765,6 @@
         }
     </style>
 </head>
-<script>
-(function() {
-  const key = "titleScrolledOnce";
-  if (localStorage.getItem(key)) return;
-
-  const originalTitle = document.title || "My Portfolio";
-  const padding = "     "; // spaces for smooth wrap
-  const scrollText = originalTitle + padding;
-  const totalFrames = scrollText.length;
-  let frame = 0;
-  const speed = 80; // smaller = smoother
-
-  const interval = setInterval(() => {
-    // slice text progressively
-    const visible = scrollText.slice(frame) + scrollText.slice(0, frame);
-    document.title = visible;
-
-    frame++;
-    if (frame > totalFrames) {
-      clearInterval(interval);
-      document.title = originalTitle; // restore title
-      localStorage.setItem(key, "true");
-    }
-  }, speed);
-})();
-</script>
-
 
 <body>
     <nav>
@@ -951,20 +924,23 @@
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="certs-grid">
-            <a href="https://learn.microsoft.com/en-us/certifications/azure-ai-fundamentals/" target="_blank" class="cert-item">
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/SAICHANDUMACHAVARAPU-9985/286DA1DF680241FF?sharingId=18B425873C7F5238" target="_blank" class="cert-item">
                 <p class="cert-title">Microsoft Certified: Azure AI Fundamentals (AI-900)</p>
             </a>
-            <a href="https://learn.microsoft.com/en-us/certifications/azure-administrator/" target="_blank" class="cert-item">
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/SAICHANDUMACHAVARAPU-9985/3AE30551C25857A7?sharingId=18B425873C7F5238" target="_blank" class="cert-item">
                 <p class="cert-title">Microsoft Certified: Azure Administrator Associate</p>
             </a>
-            <a href="https://education.oracle.com/oracle-vector-ai-search-certified-specialist/pexam_1Z0-931" target="_blank" class="cert-item">
+            <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=C5F08BCEA3CD85DC359EB5A3266DD1F5EEF324877E363CA04622C06431A6989D" target="_blank" class="cert-item">
                 <p class="cert-title">Oracle Vector AI Search – Certified Specialist</p>
             </a>
             <a href="https://www.freecodecamp.org/certification" target="_blank" class="cert-item">
                 <p class="cert-title">Scientific Computing with Python – freeCodeCamp</p>
             </a>
-            <a href="https://education.oracle.com/" target="_blank" class="cert-item">
+            <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=74C72C1C2E81A3CFB35C2F0D5AC164C57DC53C986141DA59A8911A28FD3ADF92" target="_blank" class="cert-item">
                 <p class="cert-title">Oracle Database on AWS – Architect Professional</p>
+            </a>
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/SaiChanduMachavarapu-8124/336AD720FDF1447C?sharingId=A2B1D77874A73AEA" target="_blank" class="cert-item">
+                <p class="cert-title">GitHub Copilot – Microsoft</p>
             </a>
         </div>
     </section>
@@ -973,7 +949,7 @@
     <!-- Contact Form with PageClip -->
 <section id="contact">
     <h2>Get in Touch</h2>
-    <form class="contact-form pageclip-form" action="https://send.pageclip.co/YOUR_FORM_KEY" method="post">
+    <form class="contact-form pageclip-form" action="https://send.pageclip.co/FKcRdO975OYGO5XawRc5KZBFftp0yoCs/Portfolio" method="post">
         
         <div class="form-group">
             <label for="name">Name</label>
@@ -998,10 +974,8 @@
     <div class="contact-info">
         <p>Tyler, TX, USA</p>
         <div class="contact-links">
-            <a href="mailto:saichandu@mail.com">saichandu@mail.com</a>
-            <a href="tel:+19403444378">+1 940-344-4378</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/sai-chandu-machavarapu-1256b720b/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Saichandu02" target="_blank">GitHub</a>
         </div>
     </div>
 </section>
